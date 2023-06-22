@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Simulador de Valor Líquido</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
+    <title>Entrega 5</title>
 </head>
 <body>
-    <h1>Simulador de Valor Líquido (PIS, COFINS e CSLL)</h1>
-    <button onclick="calcularValorLiquido()">Calcular Valor Líquido</button>
+    <h1>Simulador de Valor Líquido</h1>
+    <button onclick="calcularValorLiquidoTotal()">Calcular Valor Líquido Total</button>
+
+    <h2>Produtos</h2>
+    <ul id="lista-produtos"></ul>
+
+    <h2>Resultado</h2>
+    <div id="resultado"></div>
+
+    <h2>Adicionar Produto</h2>
+    <input type="text" id="nome-produto" placeholder="Nome do produto">
+    <input type="number" id="valor-bruto-produto" placeholder="Valor bruto do produto">
+    <button onclick="adicionarProduto()">Adicionar Produto</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
